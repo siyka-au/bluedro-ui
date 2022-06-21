@@ -47,7 +47,7 @@ namespace BlueDRO
             int i = 1;
             foreach (Scenario s in scenarios)
             {
-                itemCollection.Add(new Scenario { Title = $"{i++}) {s.Title}", ClassType = s.ClassType });
+                itemCollection.Add(new Scenario { Title = $"{s.Title}", ClassType = s.ClassType });
             }
             ScenarioControl.ItemsSource = itemCollection;
 

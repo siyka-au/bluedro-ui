@@ -19,12 +19,12 @@ namespace BlueDRO
 {
     public partial class MainPage : Page
     {
-        public const string FEATURE_NAME = "Bluetooth Low Energy C# Sample";
+        public const string FEATURE_NAME = "BlueDRO";
 
         List<Scenario> scenarios = new List<Scenario>
         {
-            new Scenario() { Title="Client: Discover servers", ClassType=typeof(Discovery) },
-            new Scenario() { Title="Client: Connect to a server", ClassType=typeof(Display) },
+            new Scenario() { Title="Discovery devices", ClassType=typeof(Discovery) },
+            new Scenario() { Title="Display", ClassType=typeof(Display) },
         };
 
         public string SelectedBleDeviceId;
